@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.lixm.rxjavademo"
-        minSdkVersion 21
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -33,12 +33,15 @@ dependencies {
 
 //    rxjava
     compile 'io.reactivex.rxjava2:rxjava:2.1.1'
-    compile 'io.reactivex:rxandroid:1.2.1'
-    // butterknife
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //支持把json解析成Java对象
+    compile 'com.amitshekhar.android:rx2-android-networking:1.0.0'
+//    // butterknife
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 //  okhttp3
     compile 'com.squareup.okhttp3:okhttp:3.9.0'
+
 }
 
 
