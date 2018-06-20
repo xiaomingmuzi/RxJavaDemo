@@ -30,6 +30,8 @@ public class HomeActivity extends BaseActivity {
     @BindView(R.id.fab)
     FloatingActionButton mFab;
 
+
+
     @Override
     protected int getContentViewLayoutID() {
         return R.layout.activity_home;
