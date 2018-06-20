@@ -1,5 +1,6 @@
 package com.lixm.rxjavademo;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
@@ -8,7 +9,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
     private String TAG = getClass().getName();
 
     @BindView(R.id.iv_splash)
