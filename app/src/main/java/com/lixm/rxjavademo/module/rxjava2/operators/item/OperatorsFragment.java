@@ -65,8 +65,20 @@ public class OperatorsFragment extends CatagoryBaseFragment {
             case 0:
                 startActivity(new Intent(getActivity(),RxCreateActivity.class));
                 break;
+            case 1:
+                startActivity(new Intent(getActivity(),RxZipActivity.class));
+                break;
             case 2:
                 startActivity(new Intent(getActivity(),RxMapActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(getActivity(),RxFlatMapActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(getActivity(),RxConcatMapActivity.class));
+                break;
+            case 13:
+                startActivity(new Intent(getActivity(),RxConcatActivity.class));
                 break;
         }
     }

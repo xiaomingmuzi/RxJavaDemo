@@ -1,7 +1,7 @@
 package com.lixm.rxjavademo.module.rxjava2.operators.item;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 import com.lixm.rxjavademo.R;
 import com.lixm.rxjavademo.utils.LogUtil;
@@ -14,30 +14,25 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.ObservableSource;
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Describe: FlatMap 操作符
- * <p>它可以把一个发射器Observable 通过某种方法转换为多个Observables，
- * 然后再把这些分散的Observables装进一个单一的发射器Observable。
- * 但有个需要注意的是，flatMap并不能保证事件的顺序，
- * 如果需要保证，需要用到我们下面要讲的ConcatMap
- * <p>
+ * Describe: concatMap 操作符，与FlatMap相比，他是有序的
+ *
  * Author: Lixm
  * Date: 2018/6/22
  * Email: lxm20819@sina.com
  */
-public class RxFlatMapActivity extends RxOperatorBaseActivity {
+public class RxConcatMapActivity extends RxOperatorBaseActivity {
 
-    private String TAG = getClass().getName();
+    private String TAG=getClass().getName();
 
     @Override
     protected String getSubTitle() {
-        return getString(R.string.rx_flatMap);
+        return getString(R.string.rx_concatMap);
     }
 
     @Override
@@ -49,7 +44,7 @@ public class RxFlatMapActivity extends RxOperatorBaseActivity {
                 observableEmitter.onNext(2);
                 observableEmitter.onNext(3);
             }
-        }).flatMap(new Function<Integer, ObservableSource<String>>() {
+        }).concatMap(new Function<Integer, ObservableSource<String>>() {
             @Override
             public ObservableSource<String> apply(Integer integer) throws Exception {
                 List<String> list = new ArrayList<>();

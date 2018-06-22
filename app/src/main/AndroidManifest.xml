@@ -28,7 +28,9 @@
         <activity android:name=".module.rxjava2.operators.item.RxCreateActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxMapActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxZipActivity" />
-        <activity android:name=".module.rxjava2.operators.item.RxFlatMapActivity"></activity>
+        <activity android:name=".module.rxjava2.operators.item.RxFlatMapActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxConcatActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxConcatMapActivity"></activity>
     </application>
 
 </manifest>
