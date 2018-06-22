@@ -12,9 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
-
-        </activity>
+        <activity android:name=".SplashActivity" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
@@ -25,6 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".module.web.WebViewActivity" />
+        <activity android:name=".module.rxjava2.usecases.okHttp.RxNetSingleActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxCreateActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxMapActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxZipActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxFlatMapActivity"></activity>
     </application>
 
 </manifest>
