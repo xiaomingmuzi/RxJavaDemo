@@ -1,4 +1,4 @@
-package com.lixm.rxjavademo.module.rxjava2.operators.item;
+package com.lixm.rxjavademo.module.rxjava2.operators;
 
 import android.support.annotation.Nullable;
 import android.view.View;

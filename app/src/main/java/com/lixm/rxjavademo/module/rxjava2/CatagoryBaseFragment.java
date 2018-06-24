@@ -11,7 +11,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.lixm.rxjavademo.R;
 import com.lixm.rxjavademo.base.BaseFragment;
 import com.lixm.rxjavademo.model.OperatorModel;
-import com.lixm.rxjavademo.module.rxjava2.operators.item.OperatorsAdapter;
+import com.lixm.rxjavademo.module.rxjava2.operators.OperatorsAdapter;
 
 import java.util.List;
 

@@ -14,7 +14,7 @@ import com.lixm.rxjavademo.R;
 import com.lixm.rxjavademo.base.BaseActivity;
 import com.lixm.rxjavademo.base.BaseViewPagerAdapter;
 import com.lixm.rxjavademo.constant.GlobalConfig;
-import com.lixm.rxjavademo.module.rxjava2.operators.item.OperatorsFragment;
+import com.lixm.rxjavademo.module.rxjava2.operators.OperatorsFragment;
 import com.lixm.rxjavademo.module.rxjava2.usecases.UserCasesFragment;
 import com.lixm.rxjavademo.module.web.WebViewActivity;
 import com.lixm.rxjavademo.utils.ScreenUtil;

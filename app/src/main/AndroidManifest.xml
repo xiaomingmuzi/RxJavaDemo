@@ -30,7 +30,11 @@
         <activity android:name=".module.rxjava2.operators.item.RxZipActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxFlatMapActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxConcatActivity" />
-        <activity android:name=".module.rxjava2.operators.item.RxConcatMapActivity"></activity>
+        <activity android:name=".module.rxjava2.operators.item.RxConcatMapActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxDistinctActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxFilerActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxBufferActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxTimerActivity"></activity>
     </application>
 
 </manifest>
