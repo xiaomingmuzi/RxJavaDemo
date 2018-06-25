@@ -34,7 +34,9 @@
         <activity android:name=".module.rxjava2.operators.item.RxDistinctActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxFilerActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxBufferActivity" />
-        <activity android:name=".module.rxjava2.operators.item.RxTimerActivity"></activity>
+        <activity android:name=".module.rxjava2.operators.item.RxTimerActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxIntervalActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxDoOnNextActivity"></activity>
     </application>
 
 </manifest>

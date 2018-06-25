@@ -1,5 +1,7 @@
 package com.lixm.rxjavademo.utils;
 
+import android.annotation.SuppressLint;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -14,7 +16,7 @@ import java.util.Date;
 public class TimeUtil {
     public static String getNowStrTime(){
         long time=System.currentTimeMillis();
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:MM:SS");
+       @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return sdf.format(new Date(time));
     }
 }

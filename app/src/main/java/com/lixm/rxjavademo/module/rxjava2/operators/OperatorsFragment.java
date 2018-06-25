@@ -12,6 +12,7 @@ import com.lixm.rxjavademo.module.rxjava2.operators.item.RxCreateActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxDistinctActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxFilerActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxFlatMapActivity;
+import com.lixm.rxjavademo.module.rxjava2.operators.item.RxIntervalActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxMapActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxTimerActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxZipActivity;
@@ -92,6 +93,9 @@ public class OperatorsFragment extends CatagoryBaseFragment {
                 break;
             case 9:
                 startActivity(new Intent(getActivity(), RxTimerActivity.class));
+                break;
+            case 10:
+                startActivity(new Intent(getActivity(), RxIntervalActivity.class));
                 break;
             case 13:
                 startActivity(new Intent(getActivity(),RxConcatActivity.class));
