@@ -9,11 +9,17 @@ import com.lixm.rxjavademo.module.rxjava2.operators.item.RxBufferActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxConcatActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxConcatMapActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxCreateActivity;
+import com.lixm.rxjavademo.module.rxjava2.operators.item.RxDebounceActivity;
+import com.lixm.rxjavademo.module.rxjava2.operators.item.RxDeferActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxDistinctActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxFilerActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxFlatMapActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxIntervalActivity;
+import com.lixm.rxjavademo.module.rxjava2.operators.item.RxJustActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxMapActivity;
+import com.lixm.rxjavademo.module.rxjava2.operators.item.RxSingleActivity;
+import com.lixm.rxjavademo.module.rxjava2.operators.item.RxSkipActivity;
+import com.lixm.rxjavademo.module.rxjava2.operators.item.RxTakeActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxTimerActivity;
 import com.lixm.rxjavademo.module.rxjava2.operators.item.RxZipActivity;
 
@@ -91,11 +97,23 @@ public class OperatorsFragment extends CatagoryBaseFragment {
             case 6:
                 startActivity(new Intent(getActivity(), RxFilerActivity.class));
                 break;
+            case 7:
+                startActivity(new Intent(getActivity(), RxSkipActivity.class));
+                break;
+            case 8:
+                startActivity(new Intent(getActivity(), RxTakeActivity.class));
+                break;
             case 9:
                 startActivity(new Intent(getActivity(), RxTimerActivity.class));
                 break;
             case 10:
                 startActivity(new Intent(getActivity(), RxIntervalActivity.class));
+                break;
+            case 11:
+                startActivity(new Intent(getActivity(), RxJustActivity.class));
+                break;
+            case 12:
+                startActivity(new Intent(getActivity(), RxSingleActivity.class));
                 break;
             case 13:
                 startActivity(new Intent(getActivity(),RxConcatActivity.class));
@@ -105,6 +123,12 @@ public class OperatorsFragment extends CatagoryBaseFragment {
                 break;
             case 15:
                 startActivity(new Intent(getActivity(), RxBufferActivity.class));
+                break;
+            case 16:
+                startActivity(new Intent(getActivity(), RxDebounceActivity.class));
+                break;
+            case 17:
+                startActivity(new Intent(getActivity(), RxDeferActivity.class));
                 break;
         }
     }

@@ -36,7 +36,13 @@
         <activity android:name=".module.rxjava2.operators.item.RxBufferActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxTimerActivity" />
         <activity android:name=".module.rxjava2.operators.item.RxIntervalActivity" />
-        <activity android:name=".module.rxjava2.operators.item.RxDoOnNextActivity"></activity>
+        <activity android:name=".module.rxjava2.operators.item.RxDoOnNextActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxSkipActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxTakeActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxJustActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxSingleActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxDebounceActivity" />
+        <activity android:name=".module.rxjava2.operators.item.RxDeferActivity"></activity>
     </application>
 
 </manifest>
